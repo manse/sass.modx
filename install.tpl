@@ -2,7 +2,7 @@
 /**
  * SASS
  * 
- * SASS compiler for MODX Revo.
+ * SASS compiler for MODX Evo.
  * @author	 Ryota Mannari <info@manse.jp>
  * @events OnLoadWebDocument
  * @properties  &syntax=Syntax Mode;list;scss,sass;scss &style=Compress Style;list;nested,compact,compressed;nested

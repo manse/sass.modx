@@ -1,13 +1,13 @@
-# SASS for MODX Revo
+# SASS for MODX Evo
 
-SASS compiler for MODX Revo.
+SASS compiler for MODX Evo.
  * Sass-compiles a resource which Content-Type is "text/css".
  * Compiled code is saved as cache.
  * If resource setting "Cacheable" is not checked, this plugin will not work at the resource.
 
 ## Requirements
 
- * MODX Revolution 1.0.5 or greater.
+ * MODX Evolution 1.0.5 or greater.
 
 ## Installation
 
