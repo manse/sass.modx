@@ -13,6 +13,7 @@ SASS compiler for MODX Evo.
 
  * Login your MODX manager then go to Elements > Manage Elements > Plugins > New Plugin. Paste the install.tpl's code into the Plugin code(php) then save.
  * Upload directory "sass" to "/assets/plugins/".
+ * Check the checkbox "OnLoadWebDocument".
  * Configure plugin setting at Configulation as necessary.
 
 ## Contributor
