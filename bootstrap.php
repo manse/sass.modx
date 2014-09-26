@@ -1,8 +1,8 @@
 <?php
 
-if (is_file(MODX_BASE_PATH . $plugin_base . 'SassParser.php') && $modx->documentObject['contentType'] === 'text/css' && $modx->documentObject['cacheable']) {
+if ($modx->documentObject['contentType'] === 'text/css' && $modx->documentObject['cacheable']) {
 
-	require_once MODX_BASE_PATH . $plugin_base . 'SassParser.php';
+	require_once MODX_BASE_PATH . $plugin_base . 'sass/SassParser.php';
 	
 	$options = array(
 		'syntax' => isset($syntax) && in_array($syntax, array('scss', 'sass')) ? $syntax : 'scss',
@@ -15,7 +15,7 @@ if (is_file(MODX_BASE_PATH . $plugin_base . 'SassParser.php') && $modx->document
 	$content = $modx->documentObject['content'];
 
 	try {
-		$content = $parser->toCss($content);
+		$content = $parser->toCss($content, false);
 	} catch (Exception $e) {
 		$err = $e->__toString();
 		$content = '/*' . "\n" . $err . "\n" . '*/' . "\n";
